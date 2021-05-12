@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+}
+
+header {
+    float: inline-start;
+    width: auto;
+    height: 240px;
+    border-radius: 10px;
+    background: rgb(125,217,89);
+    background: linear-gradient(135deg, rgba(125,217,89,0.9) 45%, rgba(4,158,254,0.9) 100%);
+    margin: auto;
+    padding: 22px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.map {
+    margin-top: 10px;
+    display: none;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(116, 210, 231, 0.9);
+    border-radius: 10px;
+}
+
+.navbar {   
+    float: left;
+    background: rgba(226, 223, 223, 0.3);
+    padding: 10px;
+    padding-bottom: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 60%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: right;
+    width: 24%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+}
+
+/* Add a card effect for articles */
+.cardleft {
+    background: rgba(116, 210, 231, 0.9);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.cardright {
+    background: rgba(125, 217, 89, 0.9);
+    padding: 20px;
+    padding-bottom: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.button {
+    border: none;
+    background-color: rgba(125, 233, 98, 0.9);
+    width: 100px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+footer {
+    float: inline-end;
+    background: rgba(4, 158, 254, 0.9);
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+
+.flex-container {
+    display: flex;
+}
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
