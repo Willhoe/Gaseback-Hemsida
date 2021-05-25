@@ -15,13 +15,10 @@
 
 <div class="row">
     <div class="navbar">
-        <button class="button" onclick="text()">Info</button> <br>
-        <button class="button" onclick="omrade()">Området</button>
+        <a class="button" href="/index.html">Info</a> <br>
+        <a class="button" href="/omrade.html">Området</a>
     </div>
     <div class="leftcolumn">
-        <div class="map" id="map">
-            <img src="/gaseback.png" alt="Gåsebäck" width="100%" style="border-radius: 10px;">
-        </div>
         <div class="cardleft" id="cardleft">
             <h2>Projektet</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -51,19 +48,10 @@
     <div class="rightcolumn">
         <div class="cardright" id="cardright">
             <h2>Oss</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
-        <div class="cardright" id="cardright2" style="display: none;">
-            <h2>Området</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </div>
     </div>
@@ -73,49 +61,11 @@
 
 
 <footer>
-    <p>Fooooooter</p>
-    <p>Powered by ...</p>
+    <p>Powered by Björn</p>
 </footer>
 
 
 </body>
-<script>
-function omrade() {
-  var x = document.getElementById("map");
-  var y = document.getElementById("cardleft")
-  var z = document.getElementById("cardleft2")
-  var i = document.getElementById("cardright")
-  var o = document.getElementById("cardright2")
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    y.style.display = "none";
-    z.style.display = "none";
-    i.style.display = "none";
-    o.style.display = "block";
-  } else {
-    x.style.display = "none";
-    y.style.display = "block";
-    z.style.display = "block";
-    i.style.display = "block";
-    o.style.display = "none";
-  }
-}
 
-function text() {
-  var x = document.getElementById("map");
-  var y = document.getElementById("cardleft")
-  var z = document.getElementById("cardleft2")
-  var i = document.getElementById("cardright")
-  var o = document.getElementById("cardright2")
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    y.style.display = "block";
-    z.style.display = "block";
-    i.style.display = "block";
-    o.style.display = "none";
-  }
-}
-
-</script>
 
 </html>
